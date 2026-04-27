@@ -7,7 +7,7 @@ resource "aws_lambda_function" "spotcheck_api" {
   source_code_hash = filebase64sha256("../services/spotcheck-api/spotcheck-api.zip")
   
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role    = aws_iam_role.lambda_exec_role.arn
 
 
@@ -23,7 +23,7 @@ resource "aws_lambda_function" "funds_api" {
   source_code_hash = filebase64sha256("../services/funds_api/funds_api.zip")
   
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role    = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
@@ -38,7 +38,7 @@ resource "aws_lambda_function" "user_goals" {
   source_code_hash = filebase64sha256("../services/user-goals/user-goals.zip")
 
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role    = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
@@ -53,7 +53,7 @@ resource "aws_lambda_function" "user_payment" {
   source_code_hash = filebase64sha256("../services/user-payment/user-payment.zip")
 
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role    = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
@@ -68,7 +68,7 @@ resource "aws_lambda_function" "user_learning_api" {
   source_code_hash = filebase64sha256("../services/user-learning-api/user-learning-api.zip")
 
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
@@ -83,7 +83,7 @@ resource "aws_lambda_function" "mf_central" {
   source_code_hash = filebase64sha256("../services/mf-central/mf-central.zip")
 
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role    = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
@@ -98,7 +98,7 @@ resource "aws_lambda_function" "finvu_Data" {
   source_code_hash = filebase64sha256("../services/finvu-data/finvu-data.zip")
   
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
@@ -113,7 +113,7 @@ resource "aws_lambda_function" "user_rewards" {
   source_code_hash = filebase64sha256("../services/user-rewards/user-rewards.zip")
 
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role    = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
@@ -127,7 +127,7 @@ resource "aws_lambda_function" "financial_plan_pdf" {
   source_code_hash = filebase64sha256("../services/financial-plan-pdf/financial-plan-pdf.zip")
   
   handler = "main.lambda_handler"
-  runtime = "python3.10"
+  runtime = "python3.12"
   role    = aws_iam_role.lambda_exec_role.arn
 
   timeout = 30
